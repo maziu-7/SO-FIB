@@ -1,0 +1,12 @@
+#include <iostream>
+#include "queue.hh"
+
+void alliberar(int x) {
+    Node* p = primer;
+    while (p->seg != nullptr and p->seg->id != x) p = p->seg;
+    if (p->seg != nullptr) {
+        Node* aux = p->seg;
+        p->seg = aux->seg;
+        delete aux;
+    }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Práctica de PRO2 - Bicing Bifurcado: Fichero Fuente Estacion.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Práctica de PRO2 - Bicing Bifurcado
+   &#160;<span id="projectnumber">versión 15-dic-2023</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Estacion.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_estacion_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef ESTACION_HH</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define ESTACION_HH</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_bici_8hh.html">Bici.hh</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_estacion.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_estacion.html">Estacion</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_estacion.html#af08d7074c22bad2542873c30535b28d9">   20</a></span>&#160;    set&lt;string&gt; <a class="code" href="class_estacion.html#af08d7074c22bad2542873c30535b28d9">bicis_est</a>; <span class="comment">//identificador de cada bici</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_estacion.html#a1f45e619ab50b19abb164847a04a23d2">   21</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_estacion.html#a48a342c7ad86b6c3d94ea3428b25c81e">pl_estacion</a>, <a class="code" href="class_estacion.html#a1f45e619ab50b19abb164847a04a23d2">capacidad</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//Consultoras</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_estacion.html#a6607e0576a7342860de2973cca949bb5">Estacion</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_estacion.html#a6607e0576a7342860de2973cca949bb5">Estacion</a>(<span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//Modificadoras</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_estacion.html#a7027a6d98b5ff7bbed1ce3ff98d5a079">anadir_bici</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; idb);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_estacion.html#a54f4ab737f5f2181f7869a146d2c2127">eliminar_bici</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; idb);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_estacion.html#a03841672a1db2cdc4328f3a7f79a933a">modificar_capacidad</a>(<span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//Consultoras</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_estacion.html#aacaf66c4124aa5a64b2516a81f0c8c27">estacion_llena</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_estacion.html#af8ce3dc6657e28b2a327729371ea66a7">bicis_estacion</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_estacion.html#a36720e4a97dd1d7a5711b9c969634ddb">cantidad_bicis</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_estacion.html#adb31f7572d2ee40172038b0e0368f248">plazas_libres</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_estacion.html#abfcba65f47dade71b2e27c5b0a3697b2">bici_menor</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_bici_8hh_html"><div class="ttname"><a href="_bici_8hh.html">Bici.hh</a></div><div class="ttdoc">Especificación de la clase Bici.</div></div>
+<div class="ttc" id="aclass_estacion_html"><div class="ttname"><a href="class_estacion.html">Estacion</a></div><div class="ttdoc">Representa una estación con todas las bicis que contiene.</div><div class="ttdef"><b>Definition:</b> <a href="_estacion_8hh_source.html#l00017">Estacion.hh:17</a></div></div>
+<div class="ttc" id="aclass_estacion_html_a03841672a1db2cdc4328f3a7f79a933a"><div class="ttname"><a href="class_estacion.html#a03841672a1db2cdc4328f3a7f79a933a">Estacion::modificar_capacidad</a></div><div class="ttdeci">void modificar_capacidad(int n)</div><div class="ttdoc">Altera la capacidad de la estación.</div><div class="ttdef"><b>Definition:</b> <a href="_estacion_8cc_source.html#l00024">Estacion.cc:24</a></div></div>
+<div class="ttc" id="aclass_estacion_html_a1f45e619ab50b19abb164847a04a23d2"><div class="ttname"><a href="class_estacion.html#a1f45e619ab50b19abb164847a04a23d2">Estacion::capacidad</a></div><div class="ttdeci">int capacidad</div><div class="ttdef"><b>Definition:</b> <a href="_estacion_8hh_source.html#l00021">Estacion.hh:21</a></div></div>
+<div class="ttc" id="aclass_estacion_html_a36720e4a97dd1d7a5711b9c969634ddb"><div class="ttname"><a href="class_estacion.html#a36720e4a97dd1d7a5711b9c969634ddb">Estacion::cantidad_bicis</a></div><div class="ttdeci">int cantidad_bicis() const</div><div class="ttdoc">Consultora de la cantidad de bicis de la estación.</div><div class="ttdef"><b>Definition:</b> <a href="_estacion_8cc_source.html#l00042">Estacion.cc:42</a></div></div>
+<div class="ttc" id="aclass_estacion_html_a48a342c7ad86b6c3d94ea3428b25c81e"><div class="ttname"><a href="class_estacion.html#a48a342c7ad86b6c3d94ea3428b25c81e">Estacion::pl_estacion</a></div><div class="ttdeci">int pl_estacion</div><div class="ttdef"><b>Definition:</b> <a href="_estacion_8hh_source.html#l00021">Estacion.hh:21</a></div></div>
+<div class="ttc" id="aclass_estacion_html_a54f4ab737f5f2181f7869a146d2c2127"><div class="ttname"><a href="class_estacion.html#a54f4ab737f5f2181f7869a146d2c2127">Estacion::eliminar_bici</a></div><div class="ttdeci">void eliminar_bici(const string &amp;idb)</div><div class="ttdoc">Da de baja una bici.</div><div class="ttdef"><b>Definition:</b> <a href="_estacion_8cc_source.html#l00019">Estacion.cc:19</a></div></div>
+<div class="ttc" id="aclass_estacion_html_a6607e0576a7342860de2973cca949bb5"><div class="ttname"><a href="class_estacion.html#a6607e0576a7342860de2973cca949bb5">Estacion::Estacion</a></div><div class="ttdeci">Estacion()</div><div class="ttdoc">Constructora por defecto.</div><div class="ttdef"><b>Definition:</b> <a href="_estacion_8cc_source.html#l00007">Estacion.cc:7</a></div></div>
+<div class="ttc" id="aclass_estacion_html_a7027a6d98b5ff7bbed1ce3ff98d5a079"><div class="ttname"><a href="class_estacion.html#a7027a6d98b5ff7bbed1ce3ff98d5a079">Estacion::anadir_bici</a></div><div class="ttdeci">void anadir_bici(const string &amp;idb)</div><div class="ttdoc">Añade una bici a la estación.</div><div class="ttdef"><b>Definition:</b> <a href="_estacion_8cc_source.html#l00014">Estacion.cc:14</a></div></div>
+<div class="ttc" id="aclass_estacion_html_aacaf66c4124aa5a64b2516a81f0c8c27"><div class="ttname"><a href="class_estacion.html#aacaf66c4124aa5a64b2516a81f0c8c27">Estacion::estacion_llena</a></div><div class="ttdeci">bool estacion_llena() const</div><div class="ttdoc">Consultora de la capacidad de la estación.</div><div class="ttdef"><b>Definition:</b> <a href="_estacion_8cc_source.html#l00029">Estacion.cc:29</a></div></div>
+<div class="ttc" id="aclass_estacion_html_abfcba65f47dade71b2e27c5b0a3697b2"><div class="ttname"><a href="class_estacion.html#abfcba65f47dade71b2e27c5b0a3697b2">Estacion::bici_menor</a></div><div class="ttdeci">string bici_menor() const</div><div class="ttdoc">Consultora de la bici menor.</div><div class="ttdef"><b>Definition:</b> <a href="_estacion_8cc_source.html#l00050">Estacion.cc:50</a></div></div>
+<div class="ttc" id="aclass_estacion_html_adb31f7572d2ee40172038b0e0368f248"><div class="ttname"><a href="class_estacion.html#adb31f7572d2ee40172038b0e0368f248">Estacion::plazas_libres</a></div><div class="ttdeci">int plazas_libres() const</div><div class="ttdoc">Consultora de las plazas de la estación.</div><div class="ttdef"><b>Definition:</b> <a href="_estacion_8cc_source.html#l00046">Estacion.cc:46</a></div></div>
+<div class="ttc" id="aclass_estacion_html_af08d7074c22bad2542873c30535b28d9"><div class="ttname"><a href="class_estacion.html#af08d7074c22bad2542873c30535b28d9">Estacion::bicis_est</a></div><div class="ttdeci">set&lt; string &gt; bicis_est</div><div class="ttdef"><b>Definition:</b> <a href="_estacion_8hh_source.html#l00020">Estacion.hh:20</a></div></div>
+<div class="ttc" id="aclass_estacion_html_af8ce3dc6657e28b2a327729371ea66a7"><div class="ttname"><a href="class_estacion.html#af8ce3dc6657e28b2a327729371ea66a7">Estacion::bicis_estacion</a></div><div class="ttdeci">void bicis_estacion() const</div><div class="ttdoc">Consultora y escritora de qué bicis hay en la estación.</div><div class="ttdef"><b>Definition:</b> <a href="_estacion_8cc_source.html#l00034">Estacion.cc:34</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

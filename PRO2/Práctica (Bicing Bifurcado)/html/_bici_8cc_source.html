@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Práctica de PRO2 - Bicing Bifurcado: Fichero Fuente Bici.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Práctica de PRO2 - Bicing Bifurcado
+   &#160;<span id="projectnumber">versión 15-dic-2023</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Bici.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_bici_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_bici_8hh.html">Bici.hh</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_bici.html#a02461bdbd57835bee4447339faaf9fca">    7</a></span>&#160;<a class="code" href="class_bici.html#a02461bdbd57835bee4447339faaf9fca">Bici::Bici</a>() {}</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_bici.html#ab9da3857904b842da43705e890c74800">    9</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_bici.html#ab9da3857904b842da43705e890c74800">Bici::viaje_nuevo</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; origen, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; destino) {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    pair&lt;string, string&gt; viajes(origen, destino);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    vbicis.insert(vbicis.end(), viajes);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    estacion = destino;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_bici.html#a274c552ee3e0e68f44989ca2f6c4eaad">   15</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_bici.html#a274c552ee3e0e68f44989ca2f6c4eaad">Bici::modificar_estacion</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; ide) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    estacion = ide;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_bici.html#a26cb2ef515b7d499165900b0ba7c698a">   19</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_bici.html#a26cb2ef515b7d499165900b0ba7c698a">Bici::estacion_actual</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> estacion;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_bici.html#a2e07b64c509f8ef57ace155cf9b2826f">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_bici.html#a2e07b64c509f8ef57ace155cf9b2826f">Bici::imprimir_viajes</a>() {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    list&lt;pair&lt;string, string&gt;&gt;::iterator pos;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">for</span> (pos = vbicis.begin(); pos != vbicis.end(); ++pos) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        cout &lt;&lt; pos-&gt;first &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; pos-&gt;second &lt;&lt; endl;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="ttc" id="a_bici_8hh_html"><div class="ttname"><a href="_bici_8hh.html">Bici.hh</a></div><div class="ttdoc">Especificación de la clase Bici.</div></div>
+<div class="ttc" id="aclass_bici_html_a02461bdbd57835bee4447339faaf9fca"><div class="ttname"><a href="class_bici.html#a02461bdbd57835bee4447339faaf9fca">Bici::Bici</a></div><div class="ttdeci">Bici()</div><div class="ttdoc">Constructora por defecto.</div><div class="ttdef"><b>Definition:</b> <a href="_bici_8cc_source.html#l00007">Bici.cc:7</a></div></div>
+<div class="ttc" id="aclass_bici_html_a26cb2ef515b7d499165900b0ba7c698a"><div class="ttname"><a href="class_bici.html#a26cb2ef515b7d499165900b0ba7c698a">Bici::estacion_actual</a></div><div class="ttdeci">string estacion_actual() const</div><div class="ttdoc">Consultora de la estación.</div><div class="ttdef"><b>Definition:</b> <a href="_bici_8cc_source.html#l00019">Bici.cc:19</a></div></div>
+<div class="ttc" id="aclass_bici_html_a274c552ee3e0e68f44989ca2f6c4eaad"><div class="ttname"><a href="class_bici.html#a274c552ee3e0e68f44989ca2f6c4eaad">Bici::modificar_estacion</a></div><div class="ttdeci">void modificar_estacion(const string &amp;ide)</div><div class="ttdoc">Modifica la estación en la que se encuentra la bici.</div><div class="ttdef"><b>Definition:</b> <a href="_bici_8cc_source.html#l00015">Bici.cc:15</a></div></div>
+<div class="ttc" id="aclass_bici_html_a2e07b64c509f8ef57ace155cf9b2826f"><div class="ttname"><a href="class_bici.html#a2e07b64c509f8ef57ace155cf9b2826f">Bici::imprimir_viajes</a></div><div class="ttdeci">void imprimir_viajes()</div><div class="ttdoc">Operación de escritura.</div><div class="ttdef"><b>Definition:</b> <a href="_bici_8cc_source.html#l00023">Bici.cc:23</a></div></div>
+<div class="ttc" id="aclass_bici_html_ab9da3857904b842da43705e890c74800"><div class="ttname"><a href="class_bici.html#ab9da3857904b842da43705e890c74800">Bici::viaje_nuevo</a></div><div class="ttdeci">void viaje_nuevo(const string &amp;origen, const string &amp;destino)</div><div class="ttdoc">Añade un viaje a la bici.</div><div class="ttdef"><b>Definition:</b> <a href="_bici_8cc_source.html#l00009">Bici.cc:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

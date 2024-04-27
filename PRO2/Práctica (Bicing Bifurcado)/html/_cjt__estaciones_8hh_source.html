@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Práctica de PRO2 - Bicing Bifurcado: Fichero Fuente Cjt_estaciones.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Práctica de PRO2 - Bicing Bifurcado
+   &#160;<span id="projectnumber">versión 15-dic-2023</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Cjt_estaciones.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_cjt__estaciones_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef CJT_ESTACIONES_HH</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define CJT_ESTACIONES_HH</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_estacion_8hh.html">Estacion.hh</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_cjt__bicis_8hh.html">Cjt_bicis.hh</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;BinTree.hh&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_cjt__estaciones.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cjt__estaciones.html">Cjt_estaciones</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_cjt__estaciones.html#af48fbd093483964052afbbbf5eea66ab">   22</a></span>&#160;    BinTree&lt;string&gt; <a class="code" href="class_cjt__estaciones.html#af48fbd093483964052afbbbf5eea66ab">arbol_estaciones</a>; <span class="comment">//árbol en el que se encuentran todas las estaciones</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_cjt__estaciones.html#afe296afbff345f394e0a221413e11aaf">   23</a></span>&#160;    map&lt;string, Estacion&gt; <a class="code" href="class_cjt__estaciones.html#afe296afbff345f394e0a221413e11aaf">ce</a>; <span class="comment">//identificadores de las estaciones junto a la información específica de cada estación</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_cjt__estaciones.html#ae45ccfa3caf746d5391e1e097d8436ec">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cjt__estaciones.html#ae45ccfa3caf746d5391e1e097d8436ec">pl_totales</a> = 0; <span class="comment">//plazas libres totales entre todas las estaciones</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cjt__estaciones.html#a6c8b5f934f1b93b31234c94751ec281e">i_inicializar_estaciones</a>(BinTree&lt;string&gt;&amp; a); <span class="comment">//función inmersiva que inicializa todas las estaciones</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cjt__estaciones.html#af355b5edafb26c442f9331b5fbb82fe6">i_subir_bicis</a>(<span class="keyword">const</span> BinTree&lt;string&gt;&amp; a, <a class="code" href="class_cjt__bicis.html">Cjt_bicis</a>&amp; cb); <span class="comment">//función inmersiva para subir bicis</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cjt__estaciones.html#a0825a760d5693cd12d2c70ecd46f029b">i_asignar_estacion</a>(<span class="keyword">const</span> BinTree&lt;string&gt;&amp; a, <span class="keywordtype">string</span>&amp; ide, <span class="keywordtype">double</span>&amp; coef_max, <span class="keywordtype">int</span>&amp; num_est, <span class="keywordtype">int</span>&amp; pl); <span class="comment">//función inmersiva para asignar estación</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//Constructoras</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_cjt__estaciones.html#aa52177b4ed6ce26a39f9201f37cb54f7">Cjt_estaciones</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//Modificadoras</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cjt__estaciones.html#ae900ad19207f97092d068b5e29336b41">alta_bici</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; idb, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; ide);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cjt__estaciones.html#a92c029b2c67644ac0cb94ed41158dcf3">baja_bici</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; idb, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; ide);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cjt__estaciones.html#ad8bc46a5cec09e8e20907946bd5ce3e0">mover_bici</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; ide, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; idb, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; origen);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cjt__estaciones.html#a1229e41ed2547e0cbd1c691fe8d968cb">modificar_capacidad</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; ide, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cjt__estaciones.html#ac20f7f04cdd88899b158a6893957c406">subir_bicis</a>(<a class="code" href="class_cjt__bicis.html">Cjt_bicis</a>&amp; cb);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//Consultoras</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_cjt__estaciones.html#a3956acd9e602ef59376cfd83ffc36d5a">existe_estacion</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; ide) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_cjt__estaciones.html#a98c4ebc75ff7945abaffd1dbbaf6f6cb">estacion_llena</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; ide) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cjt__estaciones.html#a9bbccc8082a3ed0bb5e8eb93b2489f88">bicis_estacion</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; ide) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cjt__estaciones.html#a0e9dcaced1220cc8dfd5dbaae4412dbb">cantidad_bicis</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; ide) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cjt__estaciones.html#adbef32388a14a9932436a81eae4abc84">plazas_totales</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cjt__estaciones.html#aaa5c1d0482d44e77bdfb9763d655adc1">asignar_estacion</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; idb, <a class="code" href="class_cjt__bicis.html">Cjt_bicis</a>&amp; b);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">//Lectura y/o escritura</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cjt__estaciones.html#a50c0e83fa653851a5cf30b16a63016df">inicializar_estaciones</a>();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;};</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_cjt__bicis_8hh_html"><div class="ttname"><a href="_cjt__bicis_8hh.html">Cjt_bicis.hh</a></div><div class="ttdoc">Especificación de la clase Cjt_bicis.</div></div>
+<div class="ttc" id="a_estacion_8hh_html"><div class="ttname"><a href="_estacion_8hh.html">Estacion.hh</a></div><div class="ttdoc">Especificación de la clase Estacion.</div></div>
+<div class="ttc" id="aclass_cjt__bicis_html"><div class="ttname"><a href="class_cjt__bicis.html">Cjt_bicis</a></div><div class="ttdoc">Representa todas las bicis con sus identificadores e viajes.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__bicis_8hh_source.html#l00017">Cjt_bicis.hh:17</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html"><div class="ttname"><a href="class_cjt__estaciones.html">Cjt_estaciones</a></div><div class="ttdoc">Representa todas las estaciones del sistema de Bicing.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8hh_source.html#l00019">Cjt_estaciones.hh:19</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_a0825a760d5693cd12d2c70ecd46f029b"><div class="ttname"><a href="class_cjt__estaciones.html#a0825a760d5693cd12d2c70ecd46f029b">Cjt_estaciones::i_asignar_estacion</a></div><div class="ttdeci">void i_asignar_estacion(const BinTree&lt; string &gt; &amp;a, string &amp;ide, double &amp;coef_max, int &amp;num_est, int &amp;pl)</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00063">Cjt_estaciones.cc:63</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_a0e9dcaced1220cc8dfd5dbaae4412dbb"><div class="ttname"><a href="class_cjt__estaciones.html#a0e9dcaced1220cc8dfd5dbaae4412dbb">Cjt_estaciones::cantidad_bicis</a></div><div class="ttdeci">int cantidad_bicis(const string &amp;ide) const</div><div class="ttdoc">Consultora de las bicis de una estación.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00129">Cjt_estaciones.cc:129</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_a1229e41ed2547e0cbd1c691fe8d968cb"><div class="ttname"><a href="class_cjt__estaciones.html#a1229e41ed2547e0cbd1c691fe8d968cb">Cjt_estaciones::modificar_capacidad</a></div><div class="ttdeci">void modificar_capacidad(const string &amp;ide, int n)</div><div class="ttdoc">Altera la capacidad de una estación.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00103">Cjt_estaciones.cc:103</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_a3956acd9e602ef59376cfd83ffc36d5a"><div class="ttname"><a href="class_cjt__estaciones.html#a3956acd9e602ef59376cfd83ffc36d5a">Cjt_estaciones::existe_estacion</a></div><div class="ttdeci">bool existe_estacion(const string &amp;ide) const</div><div class="ttdoc">Consultora que indica si existe una estación.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00114">Cjt_estaciones.cc:114</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_a50c0e83fa653851a5cf30b16a63016df"><div class="ttname"><a href="class_cjt__estaciones.html#a50c0e83fa653851a5cf30b16a63016df">Cjt_estaciones::inicializar_estaciones</a></div><div class="ttdeci">void inicializar_estaciones()</div><div class="ttdoc">Lee los parámetros de entrada y va añadiéndolos a Cjt_estaciones.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00146">Cjt_estaciones.cc:146</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_a6c8b5f934f1b93b31234c94751ec281e"><div class="ttname"><a href="class_cjt__estaciones.html#a6c8b5f934f1b93b31234c94751ec281e">Cjt_estaciones::i_inicializar_estaciones</a></div><div class="ttdeci">void i_inicializar_estaciones(BinTree&lt; string &gt; &amp;a)</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00007">Cjt_estaciones.cc:7</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_a92c029b2c67644ac0cb94ed41158dcf3"><div class="ttname"><a href="class_cjt__estaciones.html#a92c029b2c67644ac0cb94ed41158dcf3">Cjt_estaciones::baja_bici</a></div><div class="ttdeci">void baja_bici(const string &amp;idb, const string &amp;ide)</div><div class="ttdoc">Da de baja una bici.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00093">Cjt_estaciones.cc:93</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_a98c4ebc75ff7945abaffd1dbbaf6f6cb"><div class="ttname"><a href="class_cjt__estaciones.html#a98c4ebc75ff7945abaffd1dbbaf6f6cb">Cjt_estaciones::estacion_llena</a></div><div class="ttdeci">bool estacion_llena(const string &amp;ide) const</div><div class="ttdoc">Consultora que indica si una estación está llena.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00119">Cjt_estaciones.cc:119</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_a9bbccc8082a3ed0bb5e8eb93b2489f88"><div class="ttname"><a href="class_cjt__estaciones.html#a9bbccc8082a3ed0bb5e8eb93b2489f88">Cjt_estaciones::bicis_estacion</a></div><div class="ttdeci">void bicis_estacion(const string &amp;ide) const</div><div class="ttdoc">Consultora y escritora que indica qué bicis contiene una estación.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00125">Cjt_estaciones.cc:125</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_aa52177b4ed6ce26a39f9201f37cb54f7"><div class="ttname"><a href="class_cjt__estaciones.html#aa52177b4ed6ce26a39f9201f37cb54f7">Cjt_estaciones::Cjt_estaciones</a></div><div class="ttdeci">Cjt_estaciones()</div><div class="ttdoc">Constructora por defecto.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00086">Cjt_estaciones.cc:86</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_aaa5c1d0482d44e77bdfb9763d655adc1"><div class="ttname"><a href="class_cjt__estaciones.html#aaa5c1d0482d44e77bdfb9763d655adc1">Cjt_estaciones::asignar_estacion</a></div><div class="ttdeci">void asignar_estacion(const string &amp;idb, Cjt_bicis &amp;b)</div><div class="ttdoc">Consultora y escritora que asigna una bici a una estación.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00137">Cjt_estaciones.cc:137</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_ac20f7f04cdd88899b158a6893957c406"><div class="ttname"><a href="class_cjt__estaciones.html#ac20f7f04cdd88899b158a6893957c406">Cjt_estaciones::subir_bicis</a></div><div class="ttdeci">void subir_bicis(Cjt_bicis &amp;cb)</div><div class="ttdoc">Mueve bicis a niveles superiores del conjunto.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00110">Cjt_estaciones.cc:110</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_ad8bc46a5cec09e8e20907946bd5ce3e0"><div class="ttname"><a href="class_cjt__estaciones.html#ad8bc46a5cec09e8e20907946bd5ce3e0">Cjt_estaciones::mover_bici</a></div><div class="ttdeci">void mover_bici(const string &amp;ide, const string &amp;idb, const string &amp;origen)</div><div class="ttdoc">Mueve una bici de una estación a otra.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00098">Cjt_estaciones.cc:98</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_adbef32388a14a9932436a81eae4abc84"><div class="ttname"><a href="class_cjt__estaciones.html#adbef32388a14a9932436a81eae4abc84">Cjt_estaciones::plazas_totales</a></div><div class="ttdeci">int plazas_totales() const</div><div class="ttdoc">Consultora de las plazas totales del conjunto de estaciones.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00133">Cjt_estaciones.cc:133</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_ae45ccfa3caf746d5391e1e097d8436ec"><div class="ttname"><a href="class_cjt__estaciones.html#ae45ccfa3caf746d5391e1e097d8436ec">Cjt_estaciones::pl_totales</a></div><div class="ttdeci">int pl_totales</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8hh_source.html#l00024">Cjt_estaciones.hh:24</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_ae900ad19207f97092d068b5e29336b41"><div class="ttname"><a href="class_cjt__estaciones.html#ae900ad19207f97092d068b5e29336b41">Cjt_estaciones::alta_bici</a></div><div class="ttdeci">void alta_bici(const string &amp;idb, const string &amp;ide)</div><div class="ttdoc">Da de alta una bici a una estación.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00088">Cjt_estaciones.cc:88</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_af355b5edafb26c442f9331b5fbb82fe6"><div class="ttname"><a href="class_cjt__estaciones.html#af355b5edafb26c442f9331b5fbb82fe6">Cjt_estaciones::i_subir_bicis</a></div><div class="ttdeci">void i_subir_bicis(const BinTree&lt; string &gt; &amp;a, Cjt_bicis &amp;cb)</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00023">Cjt_estaciones.cc:23</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_af48fbd093483964052afbbbf5eea66ab"><div class="ttname"><a href="class_cjt__estaciones.html#af48fbd093483964052afbbbf5eea66ab">Cjt_estaciones::arbol_estaciones</a></div><div class="ttdeci">BinTree&lt; string &gt; arbol_estaciones</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8hh_source.html#l00022">Cjt_estaciones.hh:22</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_afe296afbff345f394e0a221413e11aaf"><div class="ttname"><a href="class_cjt__estaciones.html#afe296afbff345f394e0a221413e11aaf">Cjt_estaciones::ce</a></div><div class="ttdeci">map&lt; string, Estacion &gt; ce</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8hh_source.html#l00023">Cjt_estaciones.hh:23</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

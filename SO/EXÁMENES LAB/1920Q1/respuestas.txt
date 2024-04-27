@@ -1,0 +1,3 @@
+c) No se puede saber el orden porque se ejecutan de manera concurrente.
+
+d) ps -> Sleeping

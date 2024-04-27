@@ -1,0 +1,111 @@
+{
+    "C_Cpp.default.compilerPath": "/home/maziu7/uni/maziu-7/pro1/X12568.cc",
+    "files.associations": {
+        "iostream": "cpp",
+        "array": "cpp",
+        "atomic": "cpp",
+        "bit": "cpp",
+        "*.tcc": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "exception": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "memory_resource": "cpp",
+        "numeric": "cpp",
+        "random": "cpp",
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "new": "cpp",
+        "numbers": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "typeinfo": "cpp",
+        "stdio.h": "c"
+    },
+    "C_Cpp.dimInactiveRegions": false,
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.autoSave": "afterDelay",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.showTabs": "multiple", //barra de abajo
+    "workbench.layoutControl.enabled": false,   //formato de vscode en ventanas
+    "workbench.sideBar.location": "left",      //sidebar
+    "material-icon-theme.hidesExplorerArrows": true,    //carpetas sin flechas
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "editor.fontSize": 15,
+    "editor.fontLigatures": true, // ==, <=, -> estilo JP
+    "editor.fontVariations": false,
+    "editor.fontWeight": "600",   // bold
+    "editor.lineHeight": 21,    //separacion entre lineas
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": "on",  //smooth writing
+    "editor.smoothScrolling": true,
+    "editor.minimap.autohide": true,
+    "editor.glyphMargin": false,    //margen al lado de numeros(debug?)
+    "editor.guides.indentation": true,   //indentation lines
+    "editor.mouseWheelZoom": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "visible",
+    "editor.scrollbar.verticalScrollbarSize": 6,
+    "editor.overviewRulerBorder": false,
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",    //terminal font
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontWeight": "550",
+    "terminal.integrated.lineHeight": 1.4,
+    "terminal.integrated.enableMultiLinePasteWarning": "never", 
+    "terminal.integrated.localEchoStyle": "italic",
+    "terminal.integrated.gpuAcceleration": "on",
+    "explorer.confirmDragAndDrop": false,
+    "window.zoomLevel": 0.1,
+    "notebook.stickyScroll.enabled": true,
+    "workbench.tree.enableStickyScroll": false,
+    "editor.stickyScroll.enabled": false,
+    "breadcrumbs.enabled": false,
+    "window.titleBarStyle": "native",
+    "apc.electron": {
+        "frame": false,
+        "titleBarStyle": "hidden",
+        "opacity": 0.98 //opacidad 
+    },
+
+    "apc.menubar.compact": true,    //3 lines up right
+    "apc.activityBar": {
+        "size": 45,
+        "itemSize": 40,
+        "itemMargin": 8
+    },
+    "workbench.statusBar.visible": false,
+    "window.customTitleBarVisibility": "never",
+    "editor.codeActionsOnSave": {
+
+    },
+
+}

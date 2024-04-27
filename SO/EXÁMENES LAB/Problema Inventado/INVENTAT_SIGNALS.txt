@@ -1,0 +1,8 @@
+Disponemos de un texto dividido en N fragmentos. Estos fragmentos se reparten en N archivos con los nombres texto_f1.txt,texto_f2.txt...texto_fN.txt. 
+
+Queremos crear un proceso que reciba dos parametros N y S. El proceso padre debe crear N hijos. 
+
+Los hijos realizaran una espera bloqueante de un SIGUSR1 y cuando ésta les llegue migraran al cat del fragmento de texto que les corresponda, por orden:
+H1 -> texto_f1.txt, H2 -> texto_f2.txt, etc.
+
+El padre, despues de la creación de los hijos, deberá enviar signals SIGUSR1 a todos sus hijos cada S segundos, siempre por orden. Primero a H1, despues a H2, etc. La espera de estos S segundos debe ser activa. El padre, despues de enviar cada uno de los signals, debe esperar a que ese hijo haya acabado.

@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Práctica de PRO2 - Bicing Bifurcado: Fichero Fuente program.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Práctica de PRO2 - Bicing Bifurcado
+   &#160;<span id="projectnumber">versión 15-dic-2023</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">program.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="program_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_cjt__bicis_8hh.html">Cjt_bicis.hh</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_estacion_8hh.html">Estacion.hh</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_cjt__estaciones_8hh.html">Cjt_estaciones.hh</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="program_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   16</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="program_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_cjt__estaciones.html">Cjt_estaciones</a> ce;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_cjt__bicis.html">Cjt_bicis</a> cb;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    ce.<a class="code" href="class_cjt__estaciones.html#a50c0e83fa653851a5cf30b16a63016df">inicializar_estaciones</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">string</span> op;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">while</span> (cin &gt;&gt; op and op != <span class="stringliteral">&quot;fin&quot;</span>) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">string</span> idb, ide;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">if</span> (op == <span class="stringliteral">&quot;alta_bici&quot;</span> or op == <span class="stringliteral">&quot;ab&quot;</span>) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            cin &gt;&gt; idb &gt;&gt; ide;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;#ab &quot;</span> &lt;&lt; idb &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; ide &lt;&lt; endl;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">if</span> (cb.<a class="code" href="class_cjt__bicis.html#ad5bb9baa7391ea76aec0715671c6f816">existe_bici</a>(idb)) cout &lt;&lt; <span class="stringliteral">&quot;error: la bici ya existe&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (not ce.<a class="code" href="class_cjt__estaciones.html#a3956acd9e602ef59376cfd83ffc36d5a">existe_estacion</a>(ide)) cout &lt;&lt; <span class="stringliteral">&quot;error: la estacion no existe&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ce.<a class="code" href="class_cjt__estaciones.html#a98c4ebc75ff7945abaffd1dbbaf6f6cb">estacion_llena</a>(ide)) cout &lt;&lt; <span class="stringliteral">&quot;error: la bici no cabe&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                cb.<a class="code" href="class_cjt__bicis.html#a05685ed1fd22714370cf6ee9ce62f506">anadir_bici</a>(idb,ide);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                ce.<a class="code" href="class_cjt__estaciones.html#ae900ad19207f97092d068b5e29336b41">alta_bici</a>(idb,ide);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op == <span class="stringliteral">&quot;baja_bici&quot;</span> or op == <span class="stringliteral">&quot;bb&quot;</span>) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            cin &gt;&gt; idb;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;#bb &quot;</span> &lt;&lt; idb &lt;&lt; endl;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">if</span> (not cb.<a class="code" href="class_cjt__bicis.html#ad5bb9baa7391ea76aec0715671c6f816">existe_bici</a>(idb)) cout &lt;&lt; <span class="stringliteral">&quot;error: la bici no existe&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                ide = cb.<a class="code" href="class_cjt__bicis.html#a9d41e3fdeef600420ecdc127979f4253">estacion_bici</a>(idb);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                cb.<a class="code" href="class_cjt__bicis.html#a6ad5b98fb57a4633cc955b8aea46a587">eliminar_bici</a>(idb);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                ce.<a class="code" href="class_cjt__estaciones.html#a92c029b2c67644ac0cb94ed41158dcf3">baja_bici</a>(idb,ide);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op == <span class="stringliteral">&quot;estacion_bici&quot;</span> or op == <span class="stringliteral">&quot;eb&quot;</span>) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            cin &gt;&gt; idb;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;#eb &quot;</span> &lt;&lt; idb &lt;&lt; endl;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">if</span> (not cb.<a class="code" href="class_cjt__bicis.html#ad5bb9baa7391ea76aec0715671c6f816">existe_bici</a>(idb)) cout &lt;&lt; <span class="stringliteral">&quot;error: la bici no existe&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">else</span> cout &lt;&lt; cb.<a class="code" href="class_cjt__bicis.html#a9d41e3fdeef600420ecdc127979f4253">estacion_bici</a>(idb) &lt;&lt; endl;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op == <span class="stringliteral">&quot;viajes_bici&quot;</span> or op == <span class="stringliteral">&quot;vb&quot;</span>) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            cin &gt;&gt; idb;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;#vb &quot;</span> &lt;&lt; idb &lt;&lt; endl;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">if</span> (not cb.<a class="code" href="class_cjt__bicis.html#ad5bb9baa7391ea76aec0715671c6f816">existe_bici</a>(idb)) cout &lt;&lt; <span class="stringliteral">&quot;error: la bici no existe&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">else</span> cb.<a class="code" href="class_cjt__bicis.html#a3c46088368c09160218b85e2fbacb2b1">imprimir_viajes</a>(idb);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op == <span class="stringliteral">&quot;mover_bici&quot;</span> or op == <span class="stringliteral">&quot;mb&quot;</span>) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            cin &gt;&gt; idb &gt;&gt; ide;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;#mb &quot;</span> &lt;&lt; idb &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; ide &lt;&lt; endl;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">if</span> (not ce.<a class="code" href="class_cjt__estaciones.html#a3956acd9e602ef59376cfd83ffc36d5a">existe_estacion</a>(ide)) cout &lt;&lt; <span class="stringliteral">&quot;error: la estacion no existe&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (not cb.<a class="code" href="class_cjt__bicis.html#ad5bb9baa7391ea76aec0715671c6f816">existe_bici</a>(idb)) cout &lt;&lt; <span class="stringliteral">&quot;error: la bici no existe&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (cb.<a class="code" href="class_cjt__bicis.html#a9d41e3fdeef600420ecdc127979f4253">estacion_bici</a>(idb) == ide) cout &lt;&lt; <span class="stringliteral">&quot;error: la bici ya esta en el sitio&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ce.<a class="code" href="class_cjt__estaciones.html#a98c4ebc75ff7945abaffd1dbbaf6f6cb">estacion_llena</a>(ide)) cout &lt;&lt; <span class="stringliteral">&quot;error: la bici no cabe&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordtype">string</span> origen = cb.<a class="code" href="class_cjt__bicis.html#a9d41e3fdeef600420ecdc127979f4253">estacion_bici</a>(idb);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                ce.<a class="code" href="class_cjt__estaciones.html#ad8bc46a5cec09e8e20907946bd5ce3e0">mover_bici</a>(ide, idb, origen);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                cb.<a class="code" href="class_cjt__bicis.html#a1be58afa47d6025961cef1a02201459b">viaje_nuevo</a>(origen, ide, idb);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op == <span class="stringliteral">&quot;bicis_estacion&quot;</span> or op == <span class="stringliteral">&quot;be&quot;</span>) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            cin &gt;&gt; ide;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;#be &quot;</span> &lt;&lt; ide &lt;&lt; endl;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">if</span> (not ce.<a class="code" href="class_cjt__estaciones.html#a3956acd9e602ef59376cfd83ffc36d5a">existe_estacion</a>(ide)) cout &lt;&lt; <span class="stringliteral">&quot;error: la estacion no existe&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">else</span> ce.<a class="code" href="class_cjt__estaciones.html#a9bbccc8082a3ed0bb5e8eb93b2489f88">bicis_estacion</a>(ide);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op == <span class="stringliteral">&quot;modificar_capacidad&quot;</span> or op == <span class="stringliteral">&quot;mc&quot;</span>) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordtype">int</span> n;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            cin &gt;&gt; ide &gt;&gt; n;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;#mc &quot;</span> &lt;&lt; ide &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; n &lt;&lt; endl;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">if</span> (not ce.<a class="code" href="class_cjt__estaciones.html#a3956acd9e602ef59376cfd83ffc36d5a">existe_estacion</a>(ide)) cout &lt;&lt; <span class="stringliteral">&quot;error: la estacion no existe&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ce.<a class="code" href="class_cjt__estaciones.html#a0e9dcaced1220cc8dfd5dbaae4412dbb">cantidad_bicis</a>(ide) &gt; n) cout &lt;&lt; <span class="stringliteral">&quot;error: capacidad insuficiente&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">else</span> ce.<a class="code" href="class_cjt__estaciones.html#a1229e41ed2547e0cbd1c691fe8d968cb">modificar_capacidad</a>(ide, n);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op == <span class="stringliteral">&quot;plazas_libres&quot;</span> or op == <span class="stringliteral">&quot;pl&quot;</span>) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;#pl&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            cout &lt;&lt; ce.<a class="code" href="class_cjt__estaciones.html#adbef32388a14a9932436a81eae4abc84">plazas_totales</a>() &lt;&lt; endl;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op == <span class="stringliteral">&quot;subir_bicis&quot;</span> or op == <span class="stringliteral">&quot;sb&quot;</span>) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;#sb&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            ce.<a class="code" href="class_cjt__estaciones.html#ac20f7f04cdd88899b158a6893957c406">subir_bicis</a>(cb);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op == <span class="stringliteral">&quot;asignar_estacion&quot;</span> or op == <span class="stringliteral">&quot;ae&quot;</span>) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            cin &gt;&gt; idb;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;#ae &quot;</span> &lt;&lt; idb &lt;&lt; endl;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">if</span> (cb.<a class="code" href="class_cjt__bicis.html#ad5bb9baa7391ea76aec0715671c6f816">existe_bici</a>(idb)) cout &lt;&lt; <span class="stringliteral">&quot;error: la bici ya existe&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ce.<a class="code" href="class_cjt__estaciones.html#adbef32388a14a9932436a81eae4abc84">plazas_totales</a>() == 0) cout &lt;&lt; <span class="stringliteral">&quot;error: no hay plazas libres&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                ce.<a class="code" href="class_cjt__estaciones.html#aaa5c1d0482d44e77bdfb9763d655adc1">asignar_estacion</a>(idb, cb);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                cout &lt;&lt; cb.<a class="code" href="class_cjt__bicis.html#a9d41e3fdeef600420ecdc127979f4253">estacion_bici</a>(idb) &lt;&lt; endl;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="ttc" id="a_cjt__bicis_8hh_html"><div class="ttname"><a href="_cjt__bicis_8hh.html">Cjt_bicis.hh</a></div><div class="ttdoc">Especificación de la clase Cjt_bicis.</div></div>
+<div class="ttc" id="a_cjt__estaciones_8hh_html"><div class="ttname"><a href="_cjt__estaciones_8hh.html">Cjt_estaciones.hh</a></div><div class="ttdoc">Especificación de la clase Cjt_estaciones.</div></div>
+<div class="ttc" id="a_estacion_8hh_html"><div class="ttname"><a href="_estacion_8hh.html">Estacion.hh</a></div><div class="ttdoc">Especificación de la clase Estacion.</div></div>
+<div class="ttc" id="aclass_cjt__bicis_html"><div class="ttname"><a href="class_cjt__bicis.html">Cjt_bicis</a></div><div class="ttdoc">Representa todas las bicis con sus identificadores e viajes.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__bicis_8hh_source.html#l00017">Cjt_bicis.hh:17</a></div></div>
+<div class="ttc" id="aclass_cjt__bicis_html_a05685ed1fd22714370cf6ee9ce62f506"><div class="ttname"><a href="class_cjt__bicis.html#a05685ed1fd22714370cf6ee9ce62f506">Cjt_bicis::anadir_bici</a></div><div class="ttdeci">void anadir_bici(const string &amp;idb, const string &amp;ide)</div><div class="ttdoc">Añade una bici a una estación.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__bicis_8cc_source.html#l00009">Cjt_bicis.cc:9</a></div></div>
+<div class="ttc" id="aclass_cjt__bicis_html_a1be58afa47d6025961cef1a02201459b"><div class="ttname"><a href="class_cjt__bicis.html#a1be58afa47d6025961cef1a02201459b">Cjt_bicis::viaje_nuevo</a></div><div class="ttdeci">void viaje_nuevo(const string &amp;origen, const string &amp;destino, const string &amp;idb)</div><div class="ttdoc">Añade un viaje a una bici.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__bicis_8cc_source.html#l00019">Cjt_bicis.cc:19</a></div></div>
+<div class="ttc" id="aclass_cjt__bicis_html_a3c46088368c09160218b85e2fbacb2b1"><div class="ttname"><a href="class_cjt__bicis.html#a3c46088368c09160218b85e2fbacb2b1">Cjt_bicis::imprimir_viajes</a></div><div class="ttdeci">void imprimir_viajes(const string &amp;idb)</div><div class="ttdoc">Operación de escritura.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__bicis_8cc_source.html#l00036">Cjt_bicis.cc:36</a></div></div>
+<div class="ttc" id="aclass_cjt__bicis_html_a6ad5b98fb57a4633cc955b8aea46a587"><div class="ttname"><a href="class_cjt__bicis.html#a6ad5b98fb57a4633cc955b8aea46a587">Cjt_bicis::eliminar_bici</a></div><div class="ttdeci">void eliminar_bici(const string &amp;idb)</div><div class="ttdoc">Elimina una bici.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__bicis_8cc_source.html#l00015">Cjt_bicis.cc:15</a></div></div>
+<div class="ttc" id="aclass_cjt__bicis_html_a9d41e3fdeef600420ecdc127979f4253"><div class="ttname"><a href="class_cjt__bicis.html#a9d41e3fdeef600420ecdc127979f4253">Cjt_bicis::estacion_bici</a></div><div class="ttdeci">string estacion_bici(const string &amp;idb)</div><div class="ttdoc">Consultora de la estación de una bici.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__bicis_8cc_source.html#l00032">Cjt_bicis.cc:32</a></div></div>
+<div class="ttc" id="aclass_cjt__bicis_html_ad5bb9baa7391ea76aec0715671c6f816"><div class="ttname"><a href="class_cjt__bicis.html#ad5bb9baa7391ea76aec0715671c6f816">Cjt_bicis::existe_bici</a></div><div class="ttdeci">bool existe_bici(const string &amp;idb) const</div><div class="ttdoc">Consulta la existencia de una bici.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__bicis_8cc_source.html#l00027">Cjt_bicis.cc:27</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html"><div class="ttname"><a href="class_cjt__estaciones.html">Cjt_estaciones</a></div><div class="ttdoc">Representa todas las estaciones del sistema de Bicing.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8hh_source.html#l00019">Cjt_estaciones.hh:19</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_a0e9dcaced1220cc8dfd5dbaae4412dbb"><div class="ttname"><a href="class_cjt__estaciones.html#a0e9dcaced1220cc8dfd5dbaae4412dbb">Cjt_estaciones::cantidad_bicis</a></div><div class="ttdeci">int cantidad_bicis(const string &amp;ide) const</div><div class="ttdoc">Consultora de las bicis de una estación.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00129">Cjt_estaciones.cc:129</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_a1229e41ed2547e0cbd1c691fe8d968cb"><div class="ttname"><a href="class_cjt__estaciones.html#a1229e41ed2547e0cbd1c691fe8d968cb">Cjt_estaciones::modificar_capacidad</a></div><div class="ttdeci">void modificar_capacidad(const string &amp;ide, int n)</div><div class="ttdoc">Altera la capacidad de una estación.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00103">Cjt_estaciones.cc:103</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_a3956acd9e602ef59376cfd83ffc36d5a"><div class="ttname"><a href="class_cjt__estaciones.html#a3956acd9e602ef59376cfd83ffc36d5a">Cjt_estaciones::existe_estacion</a></div><div class="ttdeci">bool existe_estacion(const string &amp;ide) const</div><div class="ttdoc">Consultora que indica si existe una estación.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00114">Cjt_estaciones.cc:114</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_a50c0e83fa653851a5cf30b16a63016df"><div class="ttname"><a href="class_cjt__estaciones.html#a50c0e83fa653851a5cf30b16a63016df">Cjt_estaciones::inicializar_estaciones</a></div><div class="ttdeci">void inicializar_estaciones()</div><div class="ttdoc">Lee los parámetros de entrada y va añadiéndolos a Cjt_estaciones.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00146">Cjt_estaciones.cc:146</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_a92c029b2c67644ac0cb94ed41158dcf3"><div class="ttname"><a href="class_cjt__estaciones.html#a92c029b2c67644ac0cb94ed41158dcf3">Cjt_estaciones::baja_bici</a></div><div class="ttdeci">void baja_bici(const string &amp;idb, const string &amp;ide)</div><div class="ttdoc">Da de baja una bici.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00093">Cjt_estaciones.cc:93</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_a98c4ebc75ff7945abaffd1dbbaf6f6cb"><div class="ttname"><a href="class_cjt__estaciones.html#a98c4ebc75ff7945abaffd1dbbaf6f6cb">Cjt_estaciones::estacion_llena</a></div><div class="ttdeci">bool estacion_llena(const string &amp;ide) const</div><div class="ttdoc">Consultora que indica si una estación está llena.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00119">Cjt_estaciones.cc:119</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_a9bbccc8082a3ed0bb5e8eb93b2489f88"><div class="ttname"><a href="class_cjt__estaciones.html#a9bbccc8082a3ed0bb5e8eb93b2489f88">Cjt_estaciones::bicis_estacion</a></div><div class="ttdeci">void bicis_estacion(const string &amp;ide) const</div><div class="ttdoc">Consultora y escritora que indica qué bicis contiene una estación.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00125">Cjt_estaciones.cc:125</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_aaa5c1d0482d44e77bdfb9763d655adc1"><div class="ttname"><a href="class_cjt__estaciones.html#aaa5c1d0482d44e77bdfb9763d655adc1">Cjt_estaciones::asignar_estacion</a></div><div class="ttdeci">void asignar_estacion(const string &amp;idb, Cjt_bicis &amp;b)</div><div class="ttdoc">Consultora y escritora que asigna una bici a una estación.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00137">Cjt_estaciones.cc:137</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_ac20f7f04cdd88899b158a6893957c406"><div class="ttname"><a href="class_cjt__estaciones.html#ac20f7f04cdd88899b158a6893957c406">Cjt_estaciones::subir_bicis</a></div><div class="ttdeci">void subir_bicis(Cjt_bicis &amp;cb)</div><div class="ttdoc">Mueve bicis a niveles superiores del conjunto.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00110">Cjt_estaciones.cc:110</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_ad8bc46a5cec09e8e20907946bd5ce3e0"><div class="ttname"><a href="class_cjt__estaciones.html#ad8bc46a5cec09e8e20907946bd5ce3e0">Cjt_estaciones::mover_bici</a></div><div class="ttdeci">void mover_bici(const string &amp;ide, const string &amp;idb, const string &amp;origen)</div><div class="ttdoc">Mueve una bici de una estación a otra.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00098">Cjt_estaciones.cc:98</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_adbef32388a14a9932436a81eae4abc84"><div class="ttname"><a href="class_cjt__estaciones.html#adbef32388a14a9932436a81eae4abc84">Cjt_estaciones::plazas_totales</a></div><div class="ttdeci">int plazas_totales() const</div><div class="ttdoc">Consultora de las plazas totales del conjunto de estaciones.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00133">Cjt_estaciones.cc:133</a></div></div>
+<div class="ttc" id="aclass_cjt__estaciones_html_ae900ad19207f97092d068b5e29336b41"><div class="ttname"><a href="class_cjt__estaciones.html#ae900ad19207f97092d068b5e29336b41">Cjt_estaciones::alta_bici</a></div><div class="ttdeci">void alta_bici(const string &amp;idb, const string &amp;ide)</div><div class="ttdoc">Da de alta una bici a una estación.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__estaciones_8cc_source.html#l00088">Cjt_estaciones.cc:88</a></div></div>
+<div class="ttc" id="aprogram_8cc_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="program_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Ejecución del código principal de Bicing Bifurcado</div><div class="ttdef"><b>Definition:</b> <a href="program_8cc_source.html#l00016">program.cc:16</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

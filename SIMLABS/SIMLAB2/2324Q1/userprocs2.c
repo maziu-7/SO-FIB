@@ -88,7 +88,6 @@ int main(int argc,char *argv[]) {
         }
         else error_y_exit("open call error");
     } 
-    write(fd, &nprocesos, sizeof(int));
-
+    write(fd, buff, strlen(buff));
     while (waitpid(-1, NULL, 0) > 0);
 }

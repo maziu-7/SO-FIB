@@ -82,7 +82,7 @@ if ((fd = open(argv[1], O_RDONLY)) < 0){
 
 //Per llegir caracter a caracter de la pipe p:
 	char c;
-	while(read(p[0],&c,sizeof(char) > 0){
+	while((read(p[0],&c,sizeof(char))) > 0){
 		...
 	}
 

@@ -43,11 +43,11 @@ int main(int argc, char* argv[]) {
     if (fd2 < 0) error_y_exit("open call error");
 
     int pid,signal;
-    while (read(fd2, &pid, sizeof(int)) > 0) {
-        read(fd2, &signal, sizeof(int));
+    while (read(fd, &pid, sizeof(int)) > 0) {
+        read(fd, &signal, sizeof(int));
 
-        write(fd, &pid, sizeof(int));
-        write(fd, &signal, sizeof(int));
+        write(fd1, &pid, sizeof(int));
+        write(fd1, &signal, sizeof(int));
 
         alarm(5);
 

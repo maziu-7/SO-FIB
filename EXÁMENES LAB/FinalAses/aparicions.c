@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
     char s;
     int i = 0;
     int trobat = 0;
-    while (read(fd, &s, sizeof(char))) {
+    while (read(fd, &s, sizeof(char)) > 0) {
         if (s == c) {
             sprintf(buff, "%d ", i);
             write(1, buff, strlen(buff));

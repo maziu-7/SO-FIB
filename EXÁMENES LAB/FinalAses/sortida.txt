@@ -1,0 +1,12 @@
+PARE (5633): ALARMA REBUDA
+FILL (5634): SIGUSR1 REBUT
+Llista de posicions de la lletra a: 0 3 7 
+PARE (5633): ALARMA REBUDA
+FILL (5635): SIGUSR1 REBUT
+Llista de posicions de la lletra d: 6 10 
+PARE (5633): ALARMA REBUDA
+FILL (5636): SIGUSR1 REBUT
+Llista de posicions de la lletra r: -1
+PARE (5633): ALARMA REBUDA
+FILL (5637): SIGUSR1 REBUT
+Llista de posicions de la lletra c: 2 5 9 

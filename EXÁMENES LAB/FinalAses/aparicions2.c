@@ -85,6 +85,6 @@ int main(int argc, char* argv[]) {
         while (!alarma_recibida);
         if (kill(pids[i], SIGUSR1) < 0) error_y_exit("kill call error");
     }
-    while (waitpid(-1, NULL, 0));
+    while (waitpid(-1, NULL, 0) > 0);
     exit(0);
 }

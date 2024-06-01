@@ -23,17 +23,17 @@ void func(int s) {
     char buff[256];
     if (s == SIGINT) {
         sprintf(buff, "SIGINT RECIBIDO\n");
-        write(1, buff, strlen(buff));
+        write(2, buff, strlen(buff));
         exit(1);
     }
     else if (s == SIGUSR1) {
         sprintf(buff, "SIGUSR1 RECIBIDO\n");
-        write(1, buff, strlen(buff));
+        write(2, buff, strlen(buff));
         exit(2);
     }
     else {
         sprintf(buff, "SIGUSR2 RECIBIDO\n");
-        write(1, buff, strlen(buff));
+        write(2, buff, strlen(buff));
         exit(3);
     }
 }
@@ -42,10 +42,7 @@ int main(int argc, char* argv[]) {
     if (argc != 1) Usage();
     
     sigset_t mask;
-    sigemptyset(&mask);
-    sigaddset(&mask, SIGINT);
-    sigaddset(&mask, SIGUSR1);
-    sigaddset(&mask, SIGUSR2);
+    sigfillset(&mask);
     if (sigprocmask(SIG_BLOCK, &mask, NULL) < 0) error_y_exit("sigprocmask call error");
 
     struct sigaction t;

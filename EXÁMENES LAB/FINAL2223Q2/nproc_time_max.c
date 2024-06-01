@@ -34,11 +34,13 @@ int main(int argc,char *argv[]){
         int pid = fork();
         if (pid == 0) {
             //1 -> MIPIPE escritura
-            close(1);
-            open("MIPIPE", O_WRONLY, 0);
+            int fd = open("MIPIPE",O_WRONLY,0);
+			dup2(fd,1);
+			close(fd);
             if (execlp("./proc_time", "proc_time", argv[i+1], (char*)NULL) < 0) error_y_exit("execlp call error");
         }
         else if (pid < 0) error_y_exit("fork call error");
+        int fdl = open("MIPIPE",O_RDONLY,0);
         int st;
         waitpid(pid, &st, 0);
         if (WIFEXITED(st)) {
@@ -48,15 +50,11 @@ int main(int argc,char *argv[]){
                 write(1, buff, strlen(buff));
                 exit(1);
             }
-            else {
-                int fd = open("MIPIPE", O_RDONLY, 0);
-                char num[20];
-                int i = 0;
-                while (read(fd, &num[i], sizeof(char)) > 0) ++i;
-                int numm = atoi(num);
-                if (numm > max_time) max_time = numm;
-            }
         }
+        char num[20];
+		read(fdl, &num, sizeof(num));
+		int v = atoi(num);
+		if(v > max_time) max_time = v;
     }
     sprintf(buff, "%d", max_time);
     write(1, buff, strlen(buff));

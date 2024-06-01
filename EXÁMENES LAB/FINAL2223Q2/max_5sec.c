@@ -29,25 +29,18 @@ void func(int n) {
     } 
     else if (n == SIGUSR1) {
         char buff[256];
-        sprintf(buff, %d, getpid());
-        write(1, buff, strlen(buff));
+        sprintf(buff, "%d", getpid());
         if (execlp("./proc_time","./proc_time", buff, (char*)NULL) < 0) error_y_exit("execlp call error");
     }
 }
 
 int main(int argc,char *argv[]) {
     if (argc < 2) Usage();
-    
-    sigset_t mask;
-    sigemptyset(&mask);
-    sigaddset(&mask, SIGALRM);
-    sigaddset(&mask, SIGUSR1);
 
     struct sigaction t;
-    t.sa_mask(&mask);
     t.sa_handler = func;
     t.sa_flags = 0;
-    sigemptyset(t.sa_mask);
+    sigemptyset(&t.sa_mask);
     if (sigaction(SIGUSR1, &t, 0) < 0) error_y_exit("sigaction call error");
     if (sigaction(SIGALRM, &t, 0) < 0) error_y_exit("sigaction call error");
 

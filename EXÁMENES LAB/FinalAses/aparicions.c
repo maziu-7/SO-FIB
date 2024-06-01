@@ -36,10 +36,10 @@ int main(int argc, char* argv[]) {
         }
         ++i;
     }
-    sprintf(buff, "\n");
-    write(1, buff, strlen(buff));
     if (!trobat) {
         sprintf(buff, "-1");
         write(1, buff, strlen(buff));
     }
+    sprintf(buff, "\n");
+    write(1, buff, strlen(buff));
 }

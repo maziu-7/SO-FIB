@@ -1,0 +1,11 @@
+espera_sig.c:
+    Para enviar el signal desde otra terminal, he hecho:
+    #ps -eaf (Esto es para ver todos los PIDs de los procesos actuales. Selecciono el de ./espera_sig)
+    #kill -l (seleccionar el signal que quiero, ya sea SIGINT, SIGUSR1 o SIGUSR2)
+    #kill -num PID
+
+    Dependiendo del signal que se envíe, las posibles salidas son:
+
+    SIGINT RECIBIDO
+    SIGUSR1 RECIBIDO
+    SIGUSR2 RECIBIDO
